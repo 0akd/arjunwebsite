@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-07",
+  "r2_buckets": [
+    {
+      "binding": "JOURNALS_BUCKET",
+      "bucket_name": "journals"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "my-todos",
+      "database_id": "c430e204-e111-416c-9063-b9461bfcf8e2"
+    }
+  ]
+}

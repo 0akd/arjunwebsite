@@ -1,0 +1,83 @@
+# ---------- Dependencies ----------
+node_modules/
+.pnp
+.pnp.js
+.yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+
+# ---------- Build outputs ----------
+dist/
+build/
+.output/
+.tmp/
+tmp/
+*.tsbuildinfo
+*.tsbuildinfo.*
+.vite/
+.cache/
+
+# ---------- Qwik / Qwik City generated output ----------
+admin-frontend/server/
+admin-frontend/dist/
+admin-frontend/tmp/
+frontend/server/
+frontend/dist/
+frontend/tmp/
+
+# ---------- Cloudflare / Wrangler / Miniflare ----------
+.wrangler/
+.mf/
+.dev.vars
+.dev.vars.*
+wrangler.toml.local
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# ---------- Environment ----------
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local
+
+# ---------- Logs ----------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ---------- Testing ----------
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# ---------- Editors / OS ----------
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Optional: ignore VS Code local files but keep project configs
+# .vscode/*
+# !.vscode/extensions.json
+# !.vscode/launch.json
+# !.vscode/settings.json
+# !.vscode/*.code-snippets
