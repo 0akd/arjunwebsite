@@ -353,3 +353,62 @@ footer {
     font-size: clamp(3.3rem, 18vw, 5rem);
   }
 }
+
+.blog-content h2,
+.blog-content h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 2rem 0 0.6rem;
+}
+
+.blog-content p,
+.blog-content ul,
+.blog-content ol,
+.blog-content blockquote,
+.blog-content pre {
+  margin: 0 0 1rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.3rem;
+}
+
+.blog-content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.blog-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--bg-raise);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.blog-content pre {
+  background: var(--bg-raise);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.blog-content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.blog-content blockquote {
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+}

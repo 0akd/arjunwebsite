@@ -129,8 +129,9 @@ export default component$(() => {
         margin: "0 auto",
       }}
     >
-      <nav style={{ marginBottom: "1.5rem" }}>
+      <nav style={{ marginBottom: "1.5rem", display: "flex", gap: "1rem" }}>
         <a href="/todos">Manage Todos</a>
+        <a href="/blogs">Manage Blogs</a>
       </nav>
 
       <h1>Journal Admin</h1>

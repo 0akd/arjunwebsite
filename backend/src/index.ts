@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import journalsApp, { type Bindings as JournalBindings } from './journals'
 import todosApp, { type Bindings as TodoBindings } from './todos'
+import blogsApp from './blogs'
 
 // Merge bindings
 type Bindings = JournalBindings & TodoBindings
@@ -12,6 +13,7 @@ app.use('/*', cors())
 
 app.route('/api/journals', journalsApp)
 app.route('/api/todos', todosApp)
+app.route('/api/blogs', blogsApp)
 
 app.get('/file/:key{.*}', async (c) => {
   const key = c.req.param('key')
